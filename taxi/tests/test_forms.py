@@ -35,8 +35,8 @@ class DriverCreationFormTest(TestCase):
     def test_form_is_valid(self):
         data = {
             "username": "test_user",
-            "password1": "strongpasword123",
-            "password2": "strongpasword123",
+            "password1": "strongpassword123",
+            "password2": "strongpassword123",
             "first_name": "test_first_name",
             "last_name": "test_last_name",
             "license_number": "TST12345",
@@ -47,8 +47,8 @@ class DriverCreationFormTest(TestCase):
     def test_form_invalid_license_number(self):
         data = {
             "username": "test_user",
-            "password1": "strongpasword123",
-            "password2": "strongpasword123",
+            "password1": "strongpassword123",
+            "password2": "strongpassword123",
             "first_name": "test_first_name",
             "last_name": "test_last_name",
             "license_number": "TST",
@@ -63,8 +63,8 @@ class DriverCreationFormTest(TestCase):
 
         data = {
             "username": "test_user",
-            "password1": "strongpasword123",
-            "password2": "strongpasword123",
+            "password1": "strongpassword123",
+            "password2": "strongpassword123",
             "first_name": "test_first_name",
             "last_name": "test_last_name",
             "license_number": "TESTTEST",
@@ -77,8 +77,8 @@ class DriverCreationFormTest(TestCase):
 
         data = {
             "username": "test_user",
-            "password1": "strongpasword123",
-            "password2": "strongpasword123",
+            "password1": "strongpassword123",
+            "password2": "strongpassword123",
             "first_name": "test_first_name",
             "last_name": "test_last_name",
             "license_number": "tst12345",

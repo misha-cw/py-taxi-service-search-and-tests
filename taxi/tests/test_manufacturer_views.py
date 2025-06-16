@@ -121,7 +121,7 @@ class ManufacturerUpdateViewTest(TestCase):
     def setUp(self):
         self.user = get_user_model().objects.create_user(
             username="test_user",
-            password="<test123",
+            password="test123",
         )
         self.client.force_login(self.user)
         self.manufacturer = Manufacturer.objects.create(

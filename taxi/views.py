@@ -57,6 +57,7 @@ class ManufacturerListView(LoginRequiredMixin, generic.ListView):
             return Manufacturer.objects.filter(
                 name__icontains=form.cleaned_data["name"]
             )
+        return Manufacturer.objects.all().order_by("id")
 
 
 class ManufacturerCreateView(LoginRequiredMixin, generic.CreateView):
@@ -95,6 +96,7 @@ class CarListView(LoginRequiredMixin, generic.ListView):
             return Car.objects.filter(
                 model__icontains=form.cleaned_data["model"]
             ).order_by("id")
+        return Car.objects.all().order_by("id")
 
 
 class CarDetailView(LoginRequiredMixin, generic.DetailView):
@@ -136,6 +138,7 @@ class DriverListView(LoginRequiredMixin, generic.ListView):
             return Driver.objects.filter(
                 username__icontains=form.cleaned_data["username"]
             ).order_by("id")
+        return Driver.objects.all().order_by("id")
 
 
 class DriverDetailView(LoginRequiredMixin, generic.DetailView):
